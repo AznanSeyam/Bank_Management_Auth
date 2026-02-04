@@ -10,7 +10,6 @@ export class EmailService {
      
     },
     tls: {
-      rejectUnauthorized: false, 
     },
   });
 
