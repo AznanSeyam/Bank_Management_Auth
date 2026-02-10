@@ -4,7 +4,6 @@ import * as nodemailer from 'nodemailer';
 export class EmailService {
   private transporter = nodemailer.createTransport({
     port: parseInt(process.env.SMTP_PORT, 10),
-    secure: false,
     auth: {
      
     },
