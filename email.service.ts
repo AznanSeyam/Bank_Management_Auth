@@ -12,7 +12,6 @@ export class EmailService {
 
   async sendRegistrationEmail(userEmail: string, userName: string) {
     await this.transporter.sendMail({
-      from: `"TrustOne Bank" <${process.env.EMAIL_USER}>`,
       subject: 'Welcome to TrustOne Bank',
       text: `Hello ${userName},\n\nYour account has been successfully registered.\n\nThank you!`,
     });
