@@ -6,7 +6,6 @@ export class EmailService {
     auth: {
     },
     tls: {
-    },
   });
 
   async sendRegistrationEmail(userEmail: string, userName: string) {
