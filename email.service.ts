@@ -7,7 +7,7 @@ export class EmailService {
   })
 
   async sendRegistrationEmail(userEmail: string, userName: string) {
-    await this.transporter.sendMail({
+    await this.transporter.sendMail(
     });
   }
 }
