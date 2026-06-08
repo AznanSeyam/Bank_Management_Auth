@@ -6,7 +6,7 @@ export class AuthService {
   constructor(
     @InjectRepository(User)
     private usersRepository: Repository<User>,
-    private readonly emailService: EmailService,
+    private readonly emailService: EmailService
   ) {}
 
   async register(registerDto: RegisterDto): Promise<{ message: string; userId?: number }> {
