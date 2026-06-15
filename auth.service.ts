@@ -16,7 +16,6 @@ export class AuthService {
     if (existingUser) {
       throw new ConflictException('Email already registered');
     }
-
     const newUser = this.usersRepository.create({ name, email, password, balance: 1000 });
     await this.usersRepository.save(newUser);
 
