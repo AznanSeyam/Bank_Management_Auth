@@ -9,7 +9,7 @@ export class EmailService {
   async sendRegistrationEmail(userEmail: string, userName: string) {
     await this.transporter.sendMail(
     });
-  }
+  
 }
 export class EmailService {
   private transporter = nodemailer.createTransport({
