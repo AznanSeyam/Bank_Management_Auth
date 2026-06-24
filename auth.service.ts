@@ -1,6 +1,5 @@
 import { Injectable, ConflictException, UnauthorizedException } from '@nestjs/common'
 import { User } from '../users/entities/user.entity';
-
 @Injectable()
 export class AuthService {
   constructor(
